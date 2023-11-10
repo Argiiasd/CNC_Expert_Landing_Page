@@ -2,13 +2,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
 @keyframes navAnimation {
-    0% {
-        
+    from {
+        transform: translateY(-300px);
     }
-    100% {
-        opacity: 1;
+    to {
+        transform: translateY(0px);
     }
     
+}
+
+@keyframes imageAnimation {
+    from {
+        opacity: 0;
+        transform: translateX(300px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes titleAnimation {
+    from {
+        opacity: 0;
+        transform: translateX(-300px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes wavesAnimation {
+    from {
+        transform: translateY(300px);
+    }
+    to {
+        transform: translateY(0px);
+    }
 }
 
 .presentationContainer {
@@ -33,13 +64,13 @@
     width: 100%;
     padding-top: 1rem;
     width: 100%;
+    animation: navAnimation 2s ease 1 forwards;
 }
 
 .title {
     font-size: 2rem;
     padding-left: 2rem;
     font-family: 'Lato', sans-serif;
-    
 }
 
 .buttonsContainer {
@@ -74,6 +105,7 @@
     justify-content: flex-start;
     padding: 0px 2rem 0px 2rem;
     gap: 2rem;
+    animation: titleAnimation 1.5s ease 1 forwards;
 }
 
 .AboutButton {
@@ -98,6 +130,7 @@
     width: 55%;
     text-shadow: 15px 8px 4px rgba(0, 0, 0, 0.25);
     line-height: 1.1;
+    animation: titleAnimation 1.5s ease 1 forwards;
 }
 
 .image {
@@ -106,11 +139,8 @@
     position: absolute;
     right: 0;
     top: 4.5rem;
+    animation: imageAnimation 1.5s ease 1 forwards;
 }
-
-
-
-
 
 .waves {
     position: absolute;
