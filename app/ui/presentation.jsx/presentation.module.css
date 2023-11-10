@@ -68,7 +68,7 @@
 }
 
 .title {
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding-left: 2rem;
     font-family: 'Lato', sans-serif;
 }
@@ -99,47 +99,61 @@
 }
 
 .presentationContent {
-    margin-top: 8rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 0px 2rem 0px 2rem;
-    gap: 2rem;
-    animation: titleAnimation 1.5s ease 1 forwards;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    align-items: center;
 }
 
 .AboutButton {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #F5F5F5;
     color: white;
     border: none;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     font-family: 'Lato', sans-serif;
     padding: 0.7rem 1rem;
     border-radius: 0.5rem;
-    width: 13rem;
+    width: 20rem;
     background: linear-gradient(90deg, rgba(229,63,113,1) 0%, rgba(156,53,135,1) 35%, rgba(63,22,81,1) 100%);
+    transition: 0.5s ease;
+}
+
+.AboutButton:hover {
+    cursor: pointer;
+    translate: 0 -5px;
+    
 }
 
 .title2 {
     font-size: 5rem;
     color: #F5F5F5;
     font-family: 'Montserrat', sans-serif;
-    width: 55%;
     text-shadow: 15px 8px 4px rgba(0, 0, 0, 0.25);
     line-height: 1.1;
-    animation: titleAnimation 1.5s ease 1 forwards;
 }
 
+.gridText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    animation: titleAnimation 1s ease 1 forwards;
+    padding-left: 2rem;
+    height: 100%;
+}
+
+.gridImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .image {
-    width: 50%;
+    width: 85%;
     height: auto;
-    position: absolute;
-    right: 0;
-    top: 4.5rem;
-    animation: imageAnimation 1.5s ease 1 forwards;
+    animation: imageAnimation 1s ease 1 forwards;
+    object-fit: contain;
 }
 
 .waves {
