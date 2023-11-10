@@ -11,8 +11,8 @@ export default function Presentation() {
                 <div className={styles.presentationNav}>
                     <h2 className={styles.title}>CNC EXPERT</h2>
                     <div className={styles.buttonsContainer}>
-                        <button className={styles.button}>Quienes somos</button>
-                        <button className={styles.button}>Donde estamos</button>
+                        <button className={styles.button + ' ' + styles.secondaryButton}>Quienes somos</button>
+                        <button className={styles.button + ' ' + styles.secondaryButton}>Donde estamos</button>
                         <button className={styles.button + ' ' + styles.contactButton}>Contáctanos</button>
                     </div>
                 </div>

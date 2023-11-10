@@ -83,8 +83,12 @@
     background: none;
     color: #F5F5F5;
     border: none;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-family: 'Lato', sans-serif;
+}
+
+.button.secondaryButton:hover {
+    text-decoration: underline;
 }
 
 .button.contactButton {
@@ -92,6 +96,11 @@
     border-radius: 0.5rem;
     background-color: #e53f71;
     color: white;
+    transition: 0.5s ease;
+}
+
+.button.contactButton:hover {
+    translate: 0 -5px;
 }
 
 .button:hover {
