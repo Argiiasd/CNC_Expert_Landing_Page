@@ -1,0 +1,20 @@
+.studentsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #F5F5F5;
+}
+
+.generalContainer {
+    /* background-color: blue; */
+    height: 100%;
+    max-width: 1280px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
