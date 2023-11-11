@@ -7,8 +7,8 @@ export default function Students() {
     return (
         <div className={styles.studentsContainer}>
             <div className={styles.generalContainer}>
-                <p className={styles.text}>Conoce el equipo</p>
                 <h2 className={styles.title}>Quienes somos</h2>
+                <p className={styles.text}>Somos un grupo de estudiantes de la EEST N1 de Merlo (Bs As), el cual está desarrollando <br/> una máquina para el diseño y armado de circuitos impresos.</p>
                 <div className={styles.cardsContainer}>
                     {Object.keys(students_info).map((key) => {
                         return (

@@ -6,7 +6,7 @@
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    background-color: #F5F5F5;
+    background-color: #001220;
     position: relative;
 }
 
@@ -20,6 +20,7 @@
     align-items: center;
     gap: 1rem;
     padding-top: 1rem;
+    padding-bottom: 10rem;
 }
 
 .cardsContainer {
@@ -29,21 +30,22 @@
     justify-content: center;
     gap: 2rem;
     height: 100%;
-    margin-top:2rem;
+    margin-top:1rem;
 }
 
 .text {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.3rem;
-    color: #001220;
+    color: #F5F5F5;
+    text-align: center;
 }
 
 .title {
     font-size: 4rem;
     color: #F5F5F5;
-    background: linear-gradient(90deg, rgba(229,63,113,1) 0%, rgba(156,53,135,1) 35%, rgba(63,22,81,1) 100%);
+    /* background: linear-gradient(90deg, rgba(229,63,113,1) 0%, rgba(156,53,135,1) 35%, rgba(63,22,81,1) 100%);
     padding: 1rem 2rem;
-    border-radius: 1rem;
+    border-radius: 1rem; */
     font-family: 'Lato', sans-serif;
 }
 
@@ -55,7 +57,6 @@
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
-    filter: drop-shadow(0px 5px 5px rgba(0,0,0,0.5));
 }
 
 .divider svg {
@@ -66,5 +67,5 @@
 }
 
 .divider .shapeFill {
-    fill: #001220;
+    fill: #F5F5F5;
 }
