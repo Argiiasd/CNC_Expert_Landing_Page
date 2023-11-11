@@ -18,13 +18,12 @@ export default function Presentation() {
                 </div>
                 <div className={styles.presentationContent}>
                     <div className={styles.gridText}>
-                        <h1 className={styles.title2}>Precisión en cada trazo, innovación en cada placa</h1>
+                        <h1 className={styles.title2}>Precisión en cada trazo, <span className={styles.span}>innovación</span> en cada placa</h1>
                         <button className={styles.AboutButton}>Ver el proyecto <ArrowRightIcon /></button>    
                     </div>
                     <div className={styles.gridImage}>
-                        <Image src={vector} alt="vector" className={styles.image} />    
+                        <Image src={vector} alt="vector" className={styles.image} />
                     </div>
-                    
                 </div>
             </div>
 
