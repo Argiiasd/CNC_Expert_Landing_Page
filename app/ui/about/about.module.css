@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     background: rgb(114,49,133);
     background: linear-gradient(180deg, rgba(114,49,133,1) 0%, rgba(229,63,113,1) 100%);
     position: relative;
@@ -11,15 +11,87 @@
 .generalContainer {
     /* background-color: red; */
     height: 100%;
-    max-width: 1280px;
+    max-width: 1920px;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 12rem;
+    gap: 2rem;
+    color: #F5F5F5;
+    font-family: 'Lato', sans-serif;
 }
 
+.generalTitleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0px 5px 5px rgba(0,0,0,0.5));
+    width: 80%;
+}
 
+.generalTitle {
+    font-size: 4rem;
+}
+
+.text {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0 2rem;
+    line-height: 2rem;
+
+}
+
+.content1Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    gap: 2rem;
+}
+
+.content2Container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    gap: 2rem
+}
+
+.imageContainer {
+    width: 50%;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0px 5px 5px rgba(0,0,0,0.5));
+    border-radius: 15px;
+}
+
+.content {
+    width: 50%;
+}
+
+.contentTitle {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    text-align: center;
+    filter: drop-shadow(0px 5px 5px rgba(0,0,0,0.5));
+}
+
+.contentText {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+    filter: drop-shadow(0px 5px 5px rgba(0,0,0,0.5));
+}
 
 
 .divider {
@@ -42,4 +114,53 @@
 
 .divider .shapeFill {
     fill: #001220;
+}
+
+@media (max-width: 768px) {
+    .content1Container {
+        flex-direction: column;
+    }
+    .content2Container {
+        flex-direction: column;
+    }
+    .content {
+        width: 100%;
+    }
+    .imageContainer {
+        width: 100%;
+    }
+    .generalTitle {
+        font-size: 3rem;
+    }
+    .text {
+        font-size: 1.2rem;
+    }
+    .contentTitle {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .generalTitle {
+        font-size: 2rem;
+    }
+    .text {
+        font-size: 1.2rem;
+    }
+    .contentTitle {
+        font-size: 1.7rem;
+    }
+    .generalTitleContainer {
+        margin-bottom: 0.5rem;
+        width: 100%;
+    }
+    .content {
+        width: 100%;
+    }
+    .imageContainer {
+        width: 100%;
+    }
+    .text {
+        line-height: 1.5rem;
+    }
 }

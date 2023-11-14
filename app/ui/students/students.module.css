@@ -38,14 +38,12 @@
     font-size: 1.3rem;
     color: #F5F5F5;
     text-align: center;
+    width: 70%;
 }
 
 .title {
     font-size: 4rem;
     color: #F5F5F5;
-    /* background: linear-gradient(90deg, rgba(229,63,113,1) 0%, rgba(156,53,135,1) 35%, rgba(63,22,81,1) 100%);
-    padding: 1rem 2rem;
-    border-radius: 1rem; */
     font-family: 'Lato', sans-serif;
 }
 
@@ -68,4 +66,26 @@
 
 .divider .shapeFill {
     fill: #F5F5F5;
+}
+
+@media screen and (max-width: 768px) {
+    .text {
+        font-size: 1.2rem;
+    }
+    .title {
+        font-size: 3rem;
+    }
+    .divider {
+        display: none;
+    }
+    .generalContainer {
+        padding-bottom: 5rem;
+    }
+    .cardsContainer {
+        gap: 1rem;
+    }
+    .card {
+        width: 300px;
+        height: 450px;
+    }
 }
