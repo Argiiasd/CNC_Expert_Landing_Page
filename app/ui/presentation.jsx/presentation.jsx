@@ -1,21 +1,42 @@
 import React from 'react';
 import Image from 'next/image';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
 import vector from '../../../public/Maintenance-bro.png'
 import styles from './presentation.module.css'
 
 export default function Presentation() {
+    const openSideNav = () => {
+        const sideNav = document.querySelector('.presentationSideNav');
+        sideNav.style.transform = 'translateX(0)';
+    }
+    const closeSideNav = () => {
+        const sideNav = document.querySelector('.presentationSideNav');
+        sideNav.style.transform = 'translateX(-100%)';
+    }
+
     return (
         <div className={styles.presentationContainer}>
             <div className={styles.generalContainer}>
-                <div className={styles.presentationNav}>
+                <nav className={styles.presentationNav}>
                     <h2 className={styles.title}>CNC EXPERT</h2>
                     <div className={styles.buttonsContainer}>
                         <button className={styles.button + ' ' + styles.secondaryButton}>Quienes somos</button>
                         <button className={styles.button + ' ' + styles.secondaryButton}>Donde estamos</button>
                         <button className={styles.button + ' ' + styles.contactButton}>Contáctanos</button>
+                        <button><span className={styles.icon}><MenuIcon /></span></button>
                     </div>
-                </div>
+                </nav>
+                <nav className={styles.presentationSideNav}>
+                    <h2 className={styles.titleSide}>CNC EXPERT</h2>
+                    <div className={styles.buttonsContainerSide}>
+                    <button><span className={styles.icon}><CloseIcon /></span></button>
+                        <button className={styles.buttonSide + ' ' + styles.secondaryButton}>Quienes somos</button>
+                        <button className={styles.buttonSide + ' ' + styles.secondaryButton}>Donde estamos</button>
+                        <button className={styles.buttonSide + ' ' + styles.contactButton}>Contáctanos</button>
+                    </div>
+                </nav>
                 <div className={styles.presentationContent}>
                     <div className={styles.gridText}>
                         <h1 className={styles.title2}>Precisión en cada trazo, <span className={styles.span}>innovación</span> en cada placa</h1>
