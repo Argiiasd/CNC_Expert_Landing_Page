@@ -285,6 +285,7 @@
     }
     .title {
         font-size: 2rem;
+        padding-left: 0;
     }
     .buttonsContainer {
         justify-content: center;
@@ -301,9 +302,10 @@
         padding: 0.5rem 1rem;
     }
     .presentationNav {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         gap: 1rem;
+        width: 100%;
     }
     .waves svg {
         height: 100px;
