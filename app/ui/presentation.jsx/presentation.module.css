@@ -49,6 +49,7 @@
     height: 100vh;
     background-color: #001220;
     position: relative;
+    overflow: hidden;
 }
 
 .generalContainer {
