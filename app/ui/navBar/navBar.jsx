@@ -25,16 +25,12 @@ const NavBar = () => {
                     smooth={true}
                     offset={0}
                     duration={500} className={styles.button + ' ' + styles.secondaryButton}>Quienes somos</Link>
-                <Link to="test1"
+                <Link to="footer"
                     spy={true}
                     smooth={true}
                     offset={50}
                     duration={500} className={styles.button + ' ' + styles.contactButton}>Contáctanos</Link>
-                <Link to="test1"
-                    spy={true}
-                    smooth={true}
-                    offset={50}
-                    duration={500} onClick={openNav} className={styles.iconButton}><span ><MenuIcon sx={{ fontSize: 40 }} /></span></Link>
+                <button onClick={openNav} className={styles.iconButton}><span ><MenuIcon sx={{ fontSize: 40 }} /></span></button>
             </div>
 
             {sideNavVisible && (
@@ -46,16 +42,12 @@ const NavBar = () => {
                             smooth={true}
                             offset={0}
                             duration={500} className={styles.buttonSide + ' ' + styles.secondaryButton} onClick={closeNav}>Quienes somos</Link>
-                        <Link to="test1"
+                        <Link to="footer"
                             spy={true}
                             smooth={true}
                             offset={50}
                             duration={500} className={styles.buttonSide + ' ' + styles.contactButton} onClick={closeNav}>Contáctanos</Link>
-                        <Link to="test1"
-                            spy={true}
-                            smooth={true}
-                            offset={50}
-                            duration={500} onClick={closeNav} className={styles.iconButton2}><span><CloseIcon sx={{ fontSize: 30 }} /></span></Link>
+                        <button onClick={closeNav} className={styles.iconButton2}><span><CloseIcon sx={{ fontSize: 30 }} /></span></button>
                     </div>
                 </nav>
             )}

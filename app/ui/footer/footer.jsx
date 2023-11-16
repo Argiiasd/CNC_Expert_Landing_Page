@@ -3,7 +3,7 @@ import styles from './footer.module.css';
 
 export default function Footer() {
     return (
-        <div className={styles.footerContainer}>
+        <div className={styles.footerContainer} id='footer'>
             <div className={styles.generalContainer}>
                 <div className={styles.content3}>
                     <p className={styles.title}>Contáctanos:</p>
