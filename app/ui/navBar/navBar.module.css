@@ -1,0 +1,130 @@
+.presentationNav {
+    display: flex;
+    justify-content: space-between;
+    color: #F5F5F5;
+    width: 100%;
+    padding-top: 1rem;
+    width: 100%;
+    animation: navAnimation 2s ease 1 forwards;
+}
+
+.presentationSideNav {
+    /* transform: translateX(100%); */
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 999;
+    width: 100%;
+    background-color: #00122047;
+    box-shadow: -10px 0 10px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: flex-start;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    padding-top: 2rem;
+}
+
+.titleSide {
+    font-size: 2rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.buttonsContainerSide {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    width: 100%;
+}
+
+.title {
+    font-size: 2.5rem;
+    padding-left: 2rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.buttonsContainer {
+    display: flex;
+    gap: 1rem;
+    padding-right: 2rem;
+}
+
+.button {
+    background: none;
+    color: #F5F5F5;
+    border: none;
+    font-size: 1.5rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.buttonSide {
+    background: none;
+    color: #F5F5F5;
+    border: none;
+    font-size: 1.5rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.buttonSide.contactButton {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: #e53f71;
+    color: white;
+    transition: 0.5s ease;
+}
+
+.buttonSide.contactButton:hover {
+    translate: 0 -5px;
+}
+
+.buttonSide:hover {
+    cursor: pointer;
+}
+
+.buttonSide.secondaryButton:hover {
+    text-decoration: underline;
+}
+
+.button.secondaryButton:hover {
+    text-decoration: underline;
+}
+
+.button.contactButton {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: #e53f71;
+    color: white;
+    transition: 0.5s ease;
+}
+
+.button.contactButton:hover {
+    translate: 0 -5px;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .presentationNav {
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+    }
+    .button {
+        display: none;
+    }
+    .title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 769px) {
+    .icon {
+        display: none;
+    }
+}

@@ -1,8 +1,7 @@
 import React from 'react';
+ import NavBar from '../navBar/navBar';
 import Image from 'next/image';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
-import MenuIcon from '@mui/icons-material/Menu';
-import CloseIcon from '@mui/icons-material/Close';
 import vector from '../../../public/Maintenance-bro.png'
 import styles from './presentation.module.css'
 
@@ -10,16 +9,7 @@ export default function Presentation() {
     return (
         <div className={styles.presentationContainer}>
             <div className={styles.generalContainer}>
-                <nav className={styles.presentationNav}>
-                    <h2 className={styles.title}>CNC EXPERT</h2>
-                    <div className={styles.buttonsContainer}>
-                        <button className={styles.button + ' ' + styles.secondaryButton}>Quienes somos</button>
-                        <button className={styles.button + ' ' + styles.secondaryButton}>Donde estamos</button>
-                        <button className={styles.button + ' ' + styles.contactButton}>Contáctanos</button>
-                        <button><span className={styles.icon}><MenuIcon /></span></button>
-                    </div>
-                </nav>
-                
+                <NavBar />
                 <div className={styles.presentationContent}>
                     <div className={styles.gridText}>
                         <h1 className={styles.title2}>Precisión en cada trazo, <span className={styles.span}>innovación</span> en cada placa</h1>
