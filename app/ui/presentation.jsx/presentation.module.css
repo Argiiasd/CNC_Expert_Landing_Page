@@ -1,16 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
-@keyframes navAnimation {
-    from {
-        transform: translateY(-300px);
-    }
-    to {
-        transform: translateY(0px);
-    }
-    
-}
-
 @keyframes imageAnimation {
     from {
         opacity: 0;

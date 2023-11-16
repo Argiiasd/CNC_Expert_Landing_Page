@@ -5,8 +5,8 @@ import styles from './students.module.css';
 
 export default function Students() {
     return (
-        <div className={styles.studentsContainer}>
-            <div className={styles.generalContainer}>
+        <div className={styles.studentsContainer} id='quienes_somos'>
+            <div className={styles.generalContainer} >
                 <h2 className={styles.title}>Quienes somos</h2>
                 <p className={styles.text}>Somos un grupo de estudiantes de la EEST N1 de Merlo (Bs As), el cual está desarrollando una máquina para el diseño y armado de circuitos impresos.</p>
                 <div className={styles.cardsContainer}>

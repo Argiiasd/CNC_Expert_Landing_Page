@@ -6,7 +6,7 @@ import styles from './about.module.css';
 
 export default function About() {
     return (
-        <div className={styles.aboutContainer}>
+        <div className={styles.aboutContainer} id='proyecto'>
             <div className={styles.generalContainer}>
                 <div className={styles.generalTitleContainer}>
                     <h2 className={styles.generalTitle}>CNC EXPERT</h2>

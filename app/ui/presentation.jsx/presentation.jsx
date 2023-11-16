@@ -1,5 +1,7 @@
+'use client'
 import React from 'react';
- import NavBar from '../navBar/navBar';
+import NavBar from '../navBar/navBar';
+import { Link } from 'react-scroll';
 import Image from 'next/image';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import vector from '../../../public/Maintenance-bro.png'
@@ -13,7 +15,11 @@ export default function Presentation() {
                 <div className={styles.presentationContent}>
                     <div className={styles.gridText}>
                         <h1 className={styles.title2}>Precisión en cada trazo, <span className={styles.span}>innovación</span> en cada placa</h1>
-                        <button className={styles.AboutButton}>Ver el proyecto <ArrowRightIcon /></button>    
+                        <Link to="proyecto"
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={500} className={styles.AboutButton}>Ver el proyecto <ArrowRightIcon /></Link>
                     </div>
                     <div className={styles.gridImage}>
                         <Image src={vector} alt="vector" className={styles.image} />

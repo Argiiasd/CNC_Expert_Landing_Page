@@ -1,23 +1,28 @@
+@keyframes navAnimationSide {
+    from {
+        transform: translateX(300px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
 .presentationNav {
     display: flex;
     justify-content: space-between;
     color: #F5F5F5;
     width: 100%;
     padding-top: 1rem;
-    width: 100%;
-    animation: navAnimation 2s ease 1 forwards;
 }
 
 .presentationSideNav {
-    /* transform: translateX(100%); */
     position: fixed;
     top: 0;
     right: 0;
     height: 100vh;
     z-index: 999;
     width: 100%;
-    background-color: #00122047;
-    box-shadow: -10px 0 10px rgba(0,0,0,0.3);
+    background-color: #00122080;
     display: flex;
     flex-direction: column;
     color: white;
@@ -25,6 +30,7 @@
     align-items: center;
     backdrop-filter: blur(10px);
     padding-top: 2rem;
+    animation: navAnimationSide 0.5s ease 1 forwards;
 }
 
 .titleSide {
@@ -35,20 +41,19 @@
 .buttonsContainerSide {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
     padding: 1rem;
     width: 100%;
 }
 
 .title {
-    font-size: 2.5rem;
+    font-size: 3rem;
     padding-left: 2rem;
     font-family: 'Lato', sans-serif;
 }
 
 .buttonsContainer {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     padding-right: 2rem;
 }
 
@@ -58,26 +63,28 @@
     border: none;
     font-size: 1.5rem;
     font-family: 'Lato', sans-serif;
+    display: flex;
+    align-items: center;
 }
 
 .buttonSide {
     background: none;
     color: #F5F5F5;
     border: none;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: 'Lato', sans-serif;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .buttonSide.contactButton {
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    background-color: #e53f71;
-    color: white;
-    transition: 0.5s ease;
+    color: #e53f71;
 }
 
 .buttonSide.contactButton:hover {
-    translate: 0 -5px;
+    text-decoration: underline;
 }
 
 .buttonSide:hover {
@@ -108,6 +115,25 @@
     cursor: pointer;
 }
 
+.iconButton {
+    color: #F5F5F5;
+    background: none;
+    border: none;
+    height: 2rem;
+    width: 2rem;
+}
+
+.iconButton2 {
+    color: #F5F5F5;
+    background: none;
+    border: none;
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @media (max-width: 768px) {
     .presentationNav {
         flex-direction: row;
@@ -119,12 +145,21 @@
         display: none;
     }
     .title {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 }
 
 @media (min-width: 769px) {
-    .icon {
+    .iconButton {
         display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .title {
+        font-size: 3em;
+    }
+    .button {
+        font-size: 1.7rem;
     }
 }
