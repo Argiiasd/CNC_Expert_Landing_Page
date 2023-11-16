@@ -155,11 +155,11 @@
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
     .title {
-        font-size: 3em;
+        font-size: 3.4rem;
     }
     .button {
-        font-size: 1.7rem;
+        font-size: 2.5rem;
     }
 }

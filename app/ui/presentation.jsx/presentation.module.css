@@ -81,12 +81,15 @@
 }
 
 .title2 {
-    font-size: 5rem;
+    font-size: 4rem;
     color: #F5F5F5;
     font-family: 'Montserrat', sans-serif;
     filter: drop-shadow(0px 5px 5px rgba(0,0,0,0.5));
     line-height: 1.1;
     transition: 0.5s ease;
+    .span {
+        color: #E33F71;
+    }
 }
 
 .span {
@@ -114,12 +117,6 @@
     animation: imageAnimation 1s ease 1 forwards;
     object-fit: contain;
     filter: drop-shadow(0px 5px 5px rgba(0,0,0,0.5));
-}
-
-.title2:hover {
-    .span {
-        color: #e53f71;
-    }
 }
 
 .waves {
@@ -187,5 +184,18 @@
     
     .waves svg {
         height: 100px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .title2 {
+        font-size: 5rem;
+    }
+    .waves svg {
+        height: 300px;
+    }
+    .AboutButton {
+        font-size: 2rem;
+        width: 25rem;
     }
 }
