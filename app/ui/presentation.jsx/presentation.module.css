@@ -187,15 +187,28 @@
     }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1440px) {
     .title2 {
         font-size: 5rem;
     }
     .waves svg {
-        height: 300px;
+        height: 270px;
     }
     .AboutButton {
         font-size: 2rem;
         width: 25rem;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .title2 {
+        font-size: 6rem;
+    }
+    .waves svg {
+        height: 350px;
+    }
+    .AboutButton {
+        font-size: 2.5rem;
+        width: 30rem;
     }
 }

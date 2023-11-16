@@ -61,7 +61,7 @@
     background: none;
     color: #F5F5F5;
     border: none;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: 'Lato', sans-serif;
     display: flex;
     align-items: center;
@@ -155,7 +155,7 @@
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1921px) {
     .title {
         font-size: 3.4rem;
     }

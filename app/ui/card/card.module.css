@@ -53,3 +53,11 @@
     text-align: center;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
 }
+
+@media screen and (min-width: 1921px) {
+    .card {
+        width: 400px;
+        height: 600px;
+    }
+    
+}

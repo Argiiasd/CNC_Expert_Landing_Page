@@ -90,3 +90,9 @@
         height: 450px;
     }
 }
+
+@media (min-width: 1921px) {
+    .text {
+        font-size: 2rem;
+    }
+}
