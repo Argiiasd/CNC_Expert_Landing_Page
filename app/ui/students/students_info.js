@@ -2,7 +2,7 @@ import Aymara from '../../../public/Aymara.jpeg'
 import Nicolas from '../../../public/Nicolas.jpeg'
 import Karin from '../../../public/Karin.jpeg'
 import Juan from '../../../public/Juan.jpeg'
-import Santiago from '../../../public/placeholder.jpg'
+import Santiago from '../../../public/placeholder.png'
 
 let students_info = {
     Juan: {
