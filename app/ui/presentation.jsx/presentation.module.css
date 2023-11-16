@@ -23,15 +23,6 @@
     }
 }
 
-@keyframes wavesAnimation {
-    from {
-        transform: translateY(300px);
-    }
-    to {
-        transform: translateY(0px);
-    }
-}
-
 .presentationContainer {
     display: flex;
     flex-direction: column;
